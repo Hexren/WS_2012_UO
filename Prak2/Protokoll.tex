@@ -56,7 +56,24 @@
 \tableofcontents
 
 \section{Fragen}
-\subsection{d}
+\subsection{Woran liegt das ?}
+Die Namensgleichheit zwischen den Spalten 'Firma' und 'Firma' in den Tabellen Spediteure und Kunden
+
+\subsection{Welche Ursache kann das haben ?}
+Das Import-Tool erstellt einen syntethischen Schlüssel zwischen Bestelldaten und Produkten der aus Verkaufspreis und ProduktNr besteht. Da die Verknüpfung nur über die ProduktNr entstehen soll wird die Spalte in einer von beiden Tabellen umbenannt.
+
+\subsection{Welche Tabellen fehlen noch ?}
+Für ein Sternschema fehlt noch die 'Bestellungen' Tabelle
+
+
+\subsection{Datenmodell}
+\begin{figure}[H]
+\begin{turn}{0}	
+	\label{pic:datenmodell}
+	\includegraphics[scale=0.6]{datenmodell1.png}
+	\caption{Datenmodell Aufgabe 1} 
+\end{turn}
+\end{figure}
 
 \end{document}
 
